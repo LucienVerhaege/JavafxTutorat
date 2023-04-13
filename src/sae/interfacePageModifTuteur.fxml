@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="background" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sae.PondAction">
+   <children>
+      <ToolBar prefHeight="60.0" styleClass="header">
+         <items>
+            <Button mnemonicParsing="false" onAction="#switchToPageDetailTuteur" styleClass="Boutton" text="Retour">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#switchToPageMain" styleClass="Boutton" text="Home">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="title" text="Modification de couple" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="100.0" />
+               </padding>
+            </Label>
+         </items>
+      </ToolBar>
+      <TabPane prefHeight="318.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Forcer couple">
+               <content>
+                  <VBox alignment="BOTTOM_RIGHT" prefHeight="280.0" prefWidth="600.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" spacing="50.0" styleClass="top">
+                           <children>
+                              <Label text="Eleve Tuteur">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label text="Eleve Tutore">
+                                 <HBox.margin>
+                                    <Insets left="155.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="25.0" top="25.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox spacing="80.0" styleClass="mid">
+                           <children>
+                              <VBox spacing="50.0">
+                                 <children>
+                                    <HBox>
+                                       <children>
+                                          <Label text="Nom : ">
+                                             <HBox.margin>
+                                                <Insets left="20.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <Label fx:id="nomTuteurC" text="*Nom*">
+                                             <HBox.margin>
+                                                <Insets left="20.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="10.0" layoutY="10.0">
+                                       <children>
+                                          <Label text="Prénom : ">
+                                             <HBox.margin>
+                                                <Insets left="20.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <Label fx:id="prenomTuteurC" text="*Prénom*" />
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="10.0" layoutY="34.0">
+                                       <children>
+                                          <Label text="Année : ">
+                                             <HBox.margin>
+                                                <Insets left="20.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <Label fx:id="anneeTuteurC" text="*Année*">
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="10.0" layoutY="10.0" spacing="42.0">
+                                 <children>
+                                    <HBox>
+                                       <children>
+                                          <Label text="Nom : ">
+                                             <HBox.margin>
+                                                <Insets left="80.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <TextField fx:id="nomTutoreEntree">
+                                             <HBox.margin>
+                                                <Insets left="40.0" />
+                                             </HBox.margin>
+                                          </TextField>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="10.0" layoutY="10.0">
+                                       <children>
+                                          <Label text="Prénom : ">
+                                             <HBox.margin>
+                                                <Insets left="80.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <TextField>
+                                             <HBox.margin>
+                                                <Insets left="25.0" />
+                                             </HBox.margin></TextField>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="10.0" layoutY="34.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" styleClass="mid">
+                           <children>
+                              <Label fx:id="validationTuteurCouple" prefHeight="20.0" prefWidth="154.0" styleClass="error">
+                                 <HBox.margin>
+                                    <Insets left="300.0" top="35.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Button alignment="BOTTOM_RIGHT" mnemonicParsing="false" onAction="#modifTuteurhandler" styleClass="Boutton" text="Modifier">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets top="30.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </Tab>
+          <Tab text="Retirer de l'affectation">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <VBox spacing="10.0" styleClass="mid">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="67.0" prefWidth="477.0" styleClass="top">
+                                 <children>
+                                    <Label text="Eleve Tuteur">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="25.0" top="25.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox styleClass="mid">
+                                 <children>
+                                    <VBox prefHeight="151.0" prefWidth="134.0" spacing="50.0">
+                                       <children>
+                                          <HBox>
+                                             <children>
+                                                <Label text="Nom : ">
+                                                   <HBox.margin>
+                                                      <Insets left="20.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <Label fx:id="nomTuteurB" text="*Nom*">
+                                                   <HBox.margin>
+                                                      <Insets left="20.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <HBox layoutX="10.0" layoutY="10.0">
+                                             <children>
+                                                <Label text="Prénom : ">
+                                                   <HBox.margin>
+                                                      <Insets left="20.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <Label fx:id="prenomTuteurB" text="*Prénom*" />
+                                             </children>
+                                          </HBox>
+                                          <HBox layoutX="10.0" layoutY="34.0">
+                                             <children>
+                                                <Label text="Année : ">
+                                                   <HBox.margin>
+                                                      <Insets left="20.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                                <Label fx:id="anneeTuteurB" text="*Année*">
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" />
+                                                   </HBox.margin>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="225.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <HBox prefHeight="92.0" prefWidth="600.0" styleClass="mid">
+                           <children>
+                              <Label fx:id="validationTuteurDel" prefHeight="20.0" prefWidth="108.0" styleClass="title">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="300.0" top="25.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Button mnemonicParsing="false" onAction="#deleteEtu" styleClass="Boutton" text="Retirer">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets top="20.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</VBox>

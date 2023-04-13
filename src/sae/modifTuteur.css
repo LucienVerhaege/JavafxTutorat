@@ -1,0 +1,25 @@
+.background,.header{
+  -fx-background-color: #0A014F;
+}
+.title{
+  -fx-font-weight : bold;
+  -fx-text-fill: white;
+  -fx-font-size: 20px;
+}
+.error{
+  -fx-text-fill: white;
+}
+.mid,.top{
+  -fx-background-color: rgb(137, 140, 163);
+}
+.Boutton{
+
+      -fx-text-fill: black;
+      -fx-border-style:  solid solid solid solid;
+      -fx-border-color:  #DCDCDC;
+      -fx-border-width: 2px;
+      -fx-background-color:  #DCDCDC;
+      -fx-border-radius: 10px;
+      -fx-font-size: 15px;
+
+}

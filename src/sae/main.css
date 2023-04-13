@@ -1,0 +1,36 @@
+.titleMain{
+    -fx-font-weight : bold;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+}
+
+.tab1{
+    -fx-underline : true;
+}
+
+.background{
+    -fx-background-color : #0A014F;
+}
+
+
+
+.ponderation, .reset{
+    -fx-text-fill: black;
+    -fx-border-style:  solid solid solid solid;
+    -fx-border-color: rgb(137, 140, 163);
+    -fx-border-width: 2px;
+    -fx-background-color: rgb(137, 140, 163);
+    -fx-border-radius: 10px;
+    -fx-font-size: 15px;
+}
+.Boutton{
+
+      -fx-text-fill: black;
+      -fx-border-style:  solid solid solid solid;
+      -fx-border-color:  #DCDCDC;
+      -fx-border-width: 2px;
+      -fx-background-color:  #DCDCDC;
+      -fx-border-radius: 10px;
+      -fx-font-size: 13px;
+
+}

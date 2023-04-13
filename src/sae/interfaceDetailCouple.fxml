@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sae.PondAction">
+   <children>
+      <ToolBar prefHeight="60.0" styleClass="header">
+         <items>
+            <Button mnemonicParsing="false" onAction="#switchToPageMain" style="-fx-background-color: #DCDCDC;" text="Retour">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+            <Label alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="titre" text="Détails du couple" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <padding>
+                  <Insets left="180.0" />
+               </padding>
+            </Label>
+         </items>
+      </ToolBar>
+      <HBox prefHeight="353.0" prefWidth="600.0" styleClass="HBox">
+         <children>
+            <VBox prefHeight="347.0" prefWidth="298.0">
+               <children>
+                  <Label text="Tuteur">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="100.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox prefHeight="253.0" prefWidth="298.0">
+                     <children>
+                        <VBox prefHeight="253.0" prefWidth="154.0">
+                           <children>
+                              <Label text="Nom :">
+                                 <VBox.margin>
+                                    <Insets left="75.0" top="50.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Prenom :">
+                                 <VBox.margin>
+                                    <Insets left="75.0" top="50.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Annee :">
+                                 <VBox.margin>
+                                    <Insets left="75.0" top="50.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="253.0" prefWidth="162.0">
+                           <children>
+                              <Label fx:id="nomTuteurD" text="*Nom*">
+                                 <VBox.margin>
+                                    <Insets top="50.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="prenomTuteurD" text="*Prenom*">
+                                 <VBox.margin>
+                                    <Insets top="50.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="anneeTuteurD" text="*Annee*">
+                                 <VBox.margin>
+                                    <Insets top="50.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Button mnemonicParsing="false" onAction="#switchToPageModifTuteur" styleClass="Boutton" text="Modifier tuteur">
+                     <VBox.margin>
+                        <Insets left="75.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox prefHeight="271.0" prefWidth="296.0">
+               <children>
+                  <Label text="Tutore">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="100.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox prefHeight="253.0" prefWidth="298.0">
+                     <children>
+                        <VBox prefHeight="253.0" prefWidth="140.0">
+                           <children>
+                              <Label text="Nom :">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="75.0" top="50.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="Prenom :">
+                                 <VBox.margin>
+                                    <Insets left="75.0" top="50.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="253.0" prefWidth="147.0">
+                           <children>
+                              <Label fx:id="nomTutore" text="*Nom*">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="50.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="prenomTutore" text="*Prenom*">
+                                 <VBox.margin>
+                                    <Insets top="50.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Button mnemonicParsing="false" onAction="#switchToPageModifTutore" styleClass="Boutton" text="Modifier tutore">
+                     <VBox.margin>
+                        <Insets left="75.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

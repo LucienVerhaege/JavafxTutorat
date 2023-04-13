@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"sae","l":"Affectation"},{"l":"All Classes","url":"allclasses-index.html"},{"p":"sae","l":"Etudiant"},{"p":"sae","l":"Matiere"},{"p":"sae","l":"Tuteurs"},{"p":"sae","l":"Tutores"},{"p":"sae","l":"useAffectation"}]
